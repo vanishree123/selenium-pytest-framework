@@ -9,12 +9,8 @@ class LoginPage:
     password = (By.ID, "password")
     login_btn = (By.ID, "login-button")
 
-    def enter_username(self, user):
+    def login(self, user, pwd):
         self.driver.find_element(*self.username).send_keys(user)
-
-    def enter_password(self, pwd):
         self.driver.find_element(*self.password).send_keys(pwd)
-
-    def click_login(self):
         self.driver.find_element(*self.login_btn).click()
 
