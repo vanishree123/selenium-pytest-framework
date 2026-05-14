@@ -1,0 +1,5 @@
+2026-05-14 20:56:07,087 - INFO - Starting login test
+2026-05-14 20:56:07,088 - INFO - Opening SauceDemo website
+2026-05-14 20:56:08,555 - INFO - Entering credentials
+2026-05-14 20:56:09,528 - INFO - Validating title
+2026-05-14 20:56:09,551 - INFO - Login test passed
