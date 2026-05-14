@@ -18,3 +18,8 @@
 2026-05-14 21:05:08,244 - INFO - Entering credentials
 2026-05-14 21:05:09,254 - INFO - Validating title
 2026-05-14 21:05:09,325 - INFO - Login test passed
+2026-05-14 21:19:28,364 - INFO - Starting login test
+2026-05-14 21:19:28,365 - INFO - Opening SauceDemo website
+2026-05-14 21:19:30,002 - INFO - Entering credentials
+2026-05-14 21:19:31,532 - INFO - Validating title
+2026-05-14 21:19:31,552 - INFO - Login test passed
