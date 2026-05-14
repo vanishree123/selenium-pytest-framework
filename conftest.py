@@ -1,11 +1,27 @@
 import pytest
-from drivers.driver_factory import get_driver
+from selenium import webdriver
 
-@pytest.fixture
-def setup():
-    driver = get_driver()
+
+@pytest.fixture(params=["chrome", "firefox", "edge"])
+def setup(request):
+
+    browser = request.param
+
+    if browser == "chrome":
+        driver = webdriver.Chrome()
+
+    elif browser == "firefox":
+        driver = webdriver.Firefox()
+
+    elif browser == "edge":
+        driver = webdriver.Edge()
+
+    else:
+        raise Exception("Browser not supported")
+
+    driver.maximize_window()
+
     yield driver
+
     driver.quit()
-def pytest_html_report_title(report):
-    report.title = "Selenium Pytest Automation Report"
 

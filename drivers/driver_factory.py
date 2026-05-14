@@ -1,8 +1,25 @@
 from selenium import webdriver
+from utils.config_reader import read_config
+
 
 def get_driver():
-    driver = webdriver.Chrome()
-    driver.maximize_window()
-    driver.implicitly_wait(5)
-    return driver
 
+    config = read_config()
+
+    browser = config["browser"].lower()
+
+    if browser == "chrome":
+        driver = webdriver.Chrome()
+
+    elif browser == "firefox":
+        driver = webdriver.Firefox()
+
+    elif browser == "edge":
+        driver = webdriver.Edge()
+
+    else:
+        raise Exception("Browser not supported")
+
+    driver.maximize_window()
+
+    return driver
