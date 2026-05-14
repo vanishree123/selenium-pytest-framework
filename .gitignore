@@ -1,5 +1,22 @@
+# Virtual environment
 venv/
+
+# Python cache
 __pycache__/
+*.pyc
+
+# Pytest cache
 .pytest_cache/
-reports/
+
+# Reports
+reports/*
+!reports/.gitkeep
+
+# Logs
+logs/*
+!logs/.gitkeep
+
+# Screenshots
+screenshots/*
+!screenshots/.gitkeep
 
