@@ -1,31 +1,32 @@
+import pytest
+
 from pages.login_page import LoginPage
 from utils.logger import get_logger
 from utils.config_reader import read_config
+from testdata.login_data import login_test_data
 
 
 logger = get_logger()
 
 
-def test_login(setup):
-
-    logger.info("Starting login test")
+@pytest.mark.parametrize(
+    "username,password",
+    login_test_data
+)
+def test_login(setup, username, password):
 
     driver = setup
-    
+
     config = read_config()
 
-    logger.info("Opening Application")
+    logger.info("Opening application")
 
     driver.get(config["url"])
 
     login = LoginPage(driver)
 
-    logger.info("Entering credentials")
+    logger.info(f"Logging in with {username}")
 
-    login.login("standard_user", "secret_sauce")
-
-    logger.info("Validating title")
+    login.login(username, password)
 
     assert "Swag Labs" in driver.title
-
-    logger.info("Login test passed")

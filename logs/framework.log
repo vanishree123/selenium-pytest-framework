@@ -48,3 +48,21 @@
 2026-05-14 22:20:39,949 - INFO - Entering credentials
 2026-05-14 22:20:41,439 - INFO - Validating title
 2026-05-14 22:20:41,468 - INFO - Login test passed
+2026-05-14 22:35:04,970 - INFO - Opening application
+2026-05-14 22:35:06,582 - INFO - Logging in with standard_user
+2026-05-14 22:35:14,073 - INFO - Opening application
+2026-05-14 22:35:15,782 - INFO - Logging in with problem_user
+2026-05-14 22:35:22,971 - INFO - Opening application
+2026-05-14 22:35:24,363 - INFO - Logging in with performance_glitch_user
+2026-05-14 22:35:44,599 - INFO - Opening application
+2026-05-14 22:35:46,769 - INFO - Logging in with standard_user
+2026-05-14 22:36:03,190 - INFO - Opening application
+2026-05-14 22:36:04,843 - INFO - Logging in with problem_user
+2026-05-14 22:36:22,339 - INFO - Opening application
+2026-05-14 22:36:24,128 - INFO - Logging in with performance_glitch_user
+2026-05-14 22:36:37,404 - INFO - Opening application
+2026-05-14 22:36:37,938 - INFO - Logging in with standard_user
+2026-05-14 22:36:47,275 - INFO - Opening application
+2026-05-14 22:36:48,774 - INFO - Logging in with problem_user
+2026-05-14 22:36:56,715 - INFO - Opening application
+2026-05-14 22:36:58,288 - INFO - Logging in with performance_glitch_user
