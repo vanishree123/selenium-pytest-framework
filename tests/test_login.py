@@ -3,7 +3,7 @@ import pytest
 from pages.login_page import LoginPage
 from utils.logger import get_logger
 from utils.config_reader import read_config
-from testdata.login_data import login_test_data
+from utils.excel_utils import get_login_test_data
 
 
 logger = get_logger()
@@ -11,7 +11,7 @@ logger = get_logger()
 
 @pytest.mark.parametrize(
     "username,password",
-    login_test_data
+    get_login_test_data()
 )
 def test_login(setup, username, password):
 

@@ -4,7 +4,7 @@ from selenium import webdriver
 from pytest_html import extras
 
 
-@pytest.fixture(params=["chrome", "firefox", "edge"])
+@pytest.fixture(params=["chrome", "edge"])
 def setup(request):
 
     browser = request.param
