@@ -11,23 +11,26 @@ def setup(request):
 
     if browser == "chrome":
 
-    from selenium.webdriver.chrome.options import Options
+        from selenium.webdriver.chrome.options import Options
 
-    chrome_options = Options()
+        chrome_options = Options()
 
-    chrome_options.add_argument("--headless")
-    chrome_options.add_argument("--no-sandbox")
-    chrome_options.add_argument("--disable-dev-shm-usage")
+        chrome_options.add_argument("--headless")
+        chrome_options.add_argument("--no-sandbox")
+        chrome_options.add_argument("--disable-dev-shm-usage")
 
-    driver = webdriver.Chrome(options=chrome_options)
+        driver = webdriver.Chrome(options=chrome_options)
 
     elif browser == "firefox":
+
         driver = webdriver.Firefox()
 
     elif browser == "edge":
+
         driver = webdriver.Edge()
 
     else:
+
         raise Exception("Browser not supported")
 
     driver.maximize_window()
@@ -72,4 +75,3 @@ def pytest_runtest_makereport(item, call):
 
 def pytest_html_report_title(report):
     report.title = "Selenium Pytest Automation Report"
-
