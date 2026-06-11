@@ -32,7 +32,7 @@ jobs:
 
       - name: Run tests
         run: |
-          pytest -v --browser chrome
+          python -m pytest -v --browser chrome
 
       - name: Upload HTML report
         uses: actions/upload-artifact@v4
